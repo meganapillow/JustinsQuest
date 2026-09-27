@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#122826"><meta name="description" content="An original, forgiving pixel adventure. Three dangerous lands. One kidnapped princess. One mildly underqualified hero.">
+<title>Justin’s Quest</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23122826'/%3E%3Cpath d='M7 7h6v4h6V7h6v12h-6v6h-6v-6H7z' fill='%23ef8c88'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css"><script defer src="game.js"></script>
+</head>
+<body>
+<header class="masthead"><a href="./" aria-label="Justin’s Quest home"><span class="crest">✦</span> PILLOWVALE <span class="edition">ADVENTURE CLUB</span></a><span class="made-for">A little adventure. A very important princess.</span></header>
+<main>
+<div class="game-top"><span><i></i> JUSTIN’S QUEST</span><div><button id="pause" aria-label="Pause game">Ⅱ <span>Pause</span></button><button id="mute" aria-pressed="false">♫ <span>Sound on</span></button><button id="fullscreen" aria-label="Enter fullscreen">⛶</button></div></div>
+<section id="game-shell" aria-label="Justin’s Quest game">
+<canvas id="game" width="960" height="540" tabindex="0" aria-label="Platform adventure. Arrow keys or A and D move, Space jumps, X or J attacks. P pauses."></canvas>
+<div id="hud" hidden><div class="hero-hud"><span id="hero-name">JUSTIN</span><div id="hearts" aria-label="5 hearts">♥♥♥♥♥</div></div><div class="location-hud"><span id="chapter">01 / THE ENCHANTED FOREST</span><div class="journey-track"><i id="progress"></i></div></div><div class="coin-hud"><span>◈</span> <b id="coins">0</b></div></div>
+<div id="boss-hud" hidden><span id="boss-name"></span><div><i id="boss-health"></i></div><small id="boss-hint"></small></div>
+<div id="toast" role="status"></div>
+<div id="overlay"></div>
+<div id="mobile" aria-label="Touch controls"><div><button data-key="left" aria-label="Move left">◀</button><button data-key="right" aria-label="Move right">▶</button></div><div><button data-key="attack" aria-label="Attack">⚔</button><button data-key="jump" aria-label="Jump">↑</button></div></div>
+</section>
+<div class="game-bottom"><span><span class="tiny-heart">♥</span> BIG HEART. LITTLE SWORD.</span><span>Unlimited retries. Princess-approved.</span></div>
+<footer><div class="controls"><span><kbd>←</kbd><kbd>→</kbd> or <kbd>A</kbd><kbd>D</kbd> Move</span><span><kbd>SPACE</kbd> Jump</span><span><kbd>X</kbd> or <kbd>J</kbd> Sword</span><span><kbd>P</kbd> Pause</span></div><p>Take your time. Pet the cat. Save the princess.</p></footer>
+</main>
+</body></html>
